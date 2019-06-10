@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Reporter;
 
 public class Keywords {
 	WebDriver driver;
@@ -93,7 +92,6 @@ public class Keywords {
 	
 //	acceptAlert
 	public void acceptAlert(String locType, String locValue, String data) {
-		Reporter.log(driver.switchTo().alert().getText(), true);
 		driver.switchTo().alert().accept();
 	}
 
